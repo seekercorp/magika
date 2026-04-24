@@ -23,6 +23,9 @@ Example usage:
     >>> result = m.identify_bytes(b"# Hello\nprint('world')")
     >>> print(result.output.ct_label)
     'python'
+
+Note: See MagikaResult.output.ct_label for the detected content type label,
+and MagikaResult.output.score for the model's confidence score (0.0 to 1.0).
 """
 
 from magika.magika import Magika
