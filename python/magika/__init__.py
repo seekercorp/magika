@@ -26,6 +26,9 @@ Example usage:
 
 Note: See MagikaResult.output.ct_label for the detected content type label,
 and MagikaResult.output.score for the model's confidence score (0.0 to 1.0).
+
+For batch file identification, prefer identify_paths() over repeated calls to
+identify_path() as it is significantly more efficient for large sets of files.
 """
 
 from magika.magika import Magika
