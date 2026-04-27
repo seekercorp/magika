@@ -29,6 +29,12 @@ and MagikaResult.output.score for the model's confidence score (0.0 to 1.0).
 
 For batch file identification, prefer identify_paths() over repeated calls to
 identify_path() as it is significantly more efficient for large sets of files.
+
+Quick reference for common result attributes:
+    - result.output.ct_label   : content type label (e.g. 'python', 'pdf')
+    - result.output.score      : confidence score between 0.0 and 1.0
+    - result.output.mime_type  : MIME type string (e.g. 'text/x-python')
+    - result.status            : Status.OK on success
 """
 
 from magika.magika import Magika
